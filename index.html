@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="parent"></div>
+</body>
+
+<script>
+    const parent = document.querySelector("#parent");
+    const child = document.createElement("div");
+    child.innerText = "New div";
+    parent.appendChild(child);
+
+    const posts = [
+        {
+            title: "First post",
+        },
+        {
+            title: "Second post",
+        },
+        {
+            title: "Third post",
+        },
+    ]
+
+    posts.forEach(post => {
+        const child = document.createElement("div");
+        child.innerText = post.title;
+        parent.appendChild(child);
+    })
+</script>
+</html>

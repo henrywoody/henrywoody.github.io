@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .no-scroll {
+            overflow: hidden;
+        }
+
+        .modal-background.hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .modal-background {
+            background-color: #0005;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 10;
+        }
+
+        .modal-content {
+            background-color: #fff;
+            width: 60%;
+            height: 60%;
+            padding: 1rem 1.5rem;
+            border-radius: 1rem;
+            box-shadow: 4px 4px 8px #0002, 0 0 8px #0002;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <button onclick="openModal()">Open Modal</button>
+    </section>
+
+    <section>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem tempora iste quod odio exercitationem dolor officiis facere magni. Et non amet asperiores beatae error perspiciatis exercitationem consectetur labore iure repellat!
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem tempora iste quod odio exercitationem dolor officiis facere magni. Et non amet asperiores beatae error perspiciatis exercitationem consectetur labore iure repellat!
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem tempora iste quod odio exercitationem dolor officiis facere magni. Et non amet asperiores beatae error perspiciatis exercitationem consectetur labore iure repellat!
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem tempora iste quod odio exercitationem dolor officiis facere magni. Et non amet asperiores beatae error perspiciatis exercitationem consectetur labore iure repellat!
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem tempora iste quod odio exercitationem dolor officiis facere magni. Et non amet asperiores beatae error perspiciatis exercitationem consectetur labore iure repellat!
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem tempora iste quod odio exercitationem dolor officiis facere magni. Et non amet asperiores beatae error perspiciatis exercitationem consectetur labore iure repellat!
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem tempora iste quod odio exercitationem dolor officiis facere magni. Et non amet asperiores beatae error perspiciatis exercitationem consectetur labore iure repellat!
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem tempora iste quod odio exercitationem dolor officiis facere magni. Et non amet asperiores beatae error perspiciatis exercitationem consectetur labore iure repellat!
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem tempora iste quod odio exercitationem dolor officiis facere magni. Et non amet asperiores beatae error perspiciatis exercitationem consectetur labore iure repellat!
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem tempora iste quod odio exercitationem dolor officiis facere magni. Et non amet asperiores beatae error perspiciatis exercitationem consectetur labore iure repellat!
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem tempora iste quod odio exercitationem dolor officiis facere magni. Et non amet asperiores beatae error perspiciatis exercitationem consectetur labore iure repellat!
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem tempora iste quod odio exercitationem dolor officiis facere magni. Et non amet asperiores beatae error perspiciatis exercitationem consectetur labore iure repellat!
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem tempora iste quod odio exercitationem dolor officiis facere magni. Et non amet asperiores beatae error perspiciatis exercitationem consectetur labore iure repellat!
+        </p>
+    </section>
+
+    <iframe allow="autoplay *; encrypted-media *; fullscreen *" frameborder="0" height="450" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/album/hi-this-is-flume-mixtape/1455360241"></iframe>
+
+    <div class="modal-background hidden">
+        <div class="modal-content">
+            <h1>This is Modal</h1>
+
+        </div>
+    </div>
+</body>
+
+<script>
+    const modalBackground = document.querySelector(".modal-background");
+
+    function openModal() {
+        document.body.classList.add("no-scroll");
+        modalBackground.classList.remove("hidden");
+    }
+</script>
+</html>
